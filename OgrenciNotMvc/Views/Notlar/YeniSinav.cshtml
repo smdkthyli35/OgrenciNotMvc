@@ -1,0 +1,45 @@
+﻿@model OgrenciNotMvc.Models.EntityFramework.TBLNOTLAR
+@{
+    ViewBag.Title = "YeniSinav";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="form-group" method="post">
+    <div style="margin-bottom:15px">
+        <label>Öğrenci ID</label>
+        @Html.TextBoxFor(x => x.OGRID, new { @class = "form-control" })
+    </div>
+    <div style="margin-bottom:15px">
+        <label>Ders Adı</label>
+        @Html.TextBoxFor(x => x.DERSID, new { @class = "form-control" })
+    </div>
+    <div style="margin-bottom:15px">
+        <label>Sınav 1</label>
+        @Html.TextBoxFor(x => x.SINAV1, new { @class = "form-control" })
+    </div>
+    <div style="margin-bottom:15px">
+        <label>Sınav 2</label>
+        @Html.TextBoxFor(x => x.SINAV2, new { @class = "form-control" })
+    </div>
+    <div style="margin-bottom:15px">
+        <label>Sınav 3</label>
+        @Html.TextBoxFor(x => x.SINAV3, new { @class = "form-control" })
+    </div>
+    <div style="margin-bottom:15px">
+        <label>Proje</label>
+        @Html.TextBoxFor(x => x.PROJE, new { @class = "form-control" })
+    </div>
+    <div style="margin-bottom:15px">
+        <label>Ortalama</label>
+        @Html.TextBoxFor(x => x.ORTALAMA, new { @class = "form-control" })
+    </div>
+    <div style="margin-bottom:15px">
+        <label>Durum</label>
+        @Html.TextBoxFor(x => x.DURUM, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-bottom:15px">
+        <button class="btn btn-primary">Sınav Ekle</button>
+    </div>
+</form>
+

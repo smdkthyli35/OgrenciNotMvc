@@ -1,0 +1,16 @@
+﻿@model OgrenciNotMvc.Models.EntityFramework.TBLKULUPLER
+@{
+    ViewBag.Title = "YeniKulup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="form-group" method="post">
+    <div style="margin-bottom: 15px">
+        <label>KULÜP ADI</label>
+        @Html.TextBoxFor(x => x.KULUPAD, new { @class = "form-control" })
+    </div>
+    <div>
+        <button class="btn btn-success">Kulüp Ekle</button>
+    </div>
+</form>
+
